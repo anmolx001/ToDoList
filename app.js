@@ -162,7 +162,8 @@ app.get("/about", function(req,res){
 
 //     res.redirect("/work");
 // });
+const port = process.env.PORT || 3000;
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(port, function(){
     console.log("Server has started successfully!");
 });
